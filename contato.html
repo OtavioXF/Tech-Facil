@@ -26,18 +26,26 @@
 
         <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Pessoa usando notebook">
 
-        <form>
-            <label>Nome:</label><br>
-            <input type="text"><br><br>
+     <form>
 
-            <label>Email:</label><br>
-            <input type="email"><br><br>
+    <label>Nome:</label><br>
+    <input type="text" required
+    oninvalid="this.setCustomValidity('Preencha primeiro antes de continuar')"
+    oninput="this.setCustomValidity('')"><br><br>
 
-            <label>Mensagem:</label><br>
-            <textarea rows="4"></textarea><br><br>
+    <label>Email:</label><br>
+    <input type="email" required
+    oninvalid="this.setCustomValidity('Preencha primeiro antes de continuar')"
+    oninput="this.setCustomValidity('')"><br><br>
 
-            <button type="submit">Enviar</button>
-        </form>
+    <label>Mensagem:</label><br>
+    <textarea rows="4" required
+    oninvalid="this.setCustomValidity('Preencha primeiro antes de continuar')"
+    oninput="this.setCustomValidity('')"></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+
+</form>
     </main>
 
     <footer>
